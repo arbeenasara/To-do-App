@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-do List</title>
+    <link rel="icon" href="img/icon1.png" type="image/png" sizes="16x16">
+    <!-- CSS  -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body onload="renderTime();">
+
+    <header class="bg-dark mb-3">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12">
+              <nav class="navbar justify-content-between">
+                <a class="navbar-brand"><img src="img/icon1.png" width="30" height="30"> Todo List</a>
+                <form class="form-inline">
+                  <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"
+                    id="searchtextbox" />
+                </form>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <section class="todo-outer">
+        <div class="container">
+          <div class="row justify-content-md-center">
+            <div class="col-sm-12 col-md-8">
+              <h1><img class="icon" src="img/icon.png" width="60" height="60">Welcome in To-do List Application</h1>
+              <div class="todo-inner">
+                <div class="form-row">
+                  <div class="col-8 mr-sm-2">
+                    <input type="text" class="form-control" placeholder="Enter your task" id="addtaskinput" />
+                    <input type="hidden" id="saveindex">
+                  </div>
+                  <button type="button" class="btn btn-success mr-sm-2" id="addtaskbtn">
+                    Add Task
+                  </button>
+                  <button type="button" class="btn btn-success mr-sm-2" id="savetaskbtn" style="display: none;">
+                    Save Task
+                  </button>
+                  <button type="button" id="deleteallbtn" class="btn btn-danger">
+                    Delete All
+                  </button>
+                </div>
+                <div class="date" id="clockDisplay"></div>
+                <div class="to-do-output">
+                  <table class="table table-striped mt-3 mb-0" id="addedtasklist">
+                    
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    
+
+
+
+    <!-- JS -->
+    <script src="app.js"></script>
+
+    <!-- jQuery, Popper.js, Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <!-- Font-awesome -->
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    
+</body>
+</html>
